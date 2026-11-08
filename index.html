@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ミドリ島の勇者">
+<meta name="theme-color" content="#0b0b14">
+<meta name="description" content="スマホで遊べる見下ろし型アクションアドベンチャー『ミドリ島の勇者』">
+<title>ミドリ島の勇者</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+  <div id="screen"><canvas id="game" width="256" height="200"></canvas></div>
+  <div id="controls">
+    <div id="stick-zone">
+      <div id="stick-base"><div id="stick-knob"></div></div>
+      <div class="zone-hint">ここをドラッグで移動</div>
+    </div>
+    <div id="btn-zone">
+      <div class="btn big" id="btn-b" data-btn="b"><span>B</span><small id="b-label">-</small></div>
+      <div class="btn big" id="btn-a" data-btn="a"><span>A</span><small>剣</small></div>
+    </div>
+    <div id="sysbar">
+      <div class="btn sys" data-btn="menu">≡ ポーズ</div>
+      <div class="btn sys" data-btn="swap">⇄ 切替</div>
+      <div class="btn sys" data-btn="sound" id="btn-sound">♪ ON</div>
+    </div>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
